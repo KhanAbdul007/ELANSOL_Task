@@ -1,0 +1,12 @@
+.card {
+    padding: 5em;
+    background-color: rgb(217, 0, 130);
+    border-radius: 10%;
+}
+
+.text-modify {
+    color: white !important;
+    padding: 5px;
+    font-size: large;
+    width: 300px;
+}
