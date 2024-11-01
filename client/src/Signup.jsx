@@ -34,7 +34,7 @@ const Signup = () => {
       );
       console.log("User registered successfully:", response.data);
       alert("Registration successful!");
-      navigate("/signin"); // Redirect to sign-in page
+      navigate("/signin");
     } catch (error) {
       console.error("Error registering user:", error);
       alert("Registration failed. Please try again.");

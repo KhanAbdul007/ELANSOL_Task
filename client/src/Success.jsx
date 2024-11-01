@@ -4,7 +4,6 @@ const Success = () => {
   const [userName, setUserName] = useState("");
 
   useEffect(() => {
-    // Retrieve the user's name from local storage
     const name = localStorage.getItem("userName");
     if (name) {
       setUserName(name);

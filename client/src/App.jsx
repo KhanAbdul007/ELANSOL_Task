@@ -5,6 +5,7 @@ import './App.css'
 import Signup from './Signup'
 import Signin from './Signin'
 import Success from './Success'
+import Users from './Users'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/success" element={<Success />} />
+        <Route path="/users" element={<Users />} />
       </Routes>
     </Router>
   );

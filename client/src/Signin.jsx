@@ -31,7 +31,7 @@ const Signin = () => {
      if (response.data.success) {
         
        alert("Successfully logged in!");
-       window.location.href = "/success";
+       window.location.href = "/users";
      } else {
        alert("Invalid credentials. Please try again.");
      }
