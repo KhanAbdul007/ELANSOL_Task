@@ -29,7 +29,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/register",
+        "https://elansol-backend-1c8t.onrender.com/api/register",
         formData
       );
       console.log("User registered successfully:", response.data);
