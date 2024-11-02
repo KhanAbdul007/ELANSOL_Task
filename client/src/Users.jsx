@@ -7,7 +7,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/users");
+        const response = await axios.get("https://elansol-backend-1c8t.onrender.com/api/users");
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
@@ -18,15 +18,20 @@ const Users = () => {
   }, []);
 
   return (
-    <div>
+    <div className="out">
       <h1>All Users</h1>
       {users.length > 0 ? (
         <ul>
           {users.map((user) => (
             <li key={user._id}>
+              <div className="name">
               <strong>Name:</strong> {user.name} {user.lastName}
+              </div>
+              <div className="mail">
+            <strong>Email:</strong> {user.email}
+            </div>
               <br />
-              <strong>Email:</strong> {user.email}
+            
             </li>
           ))}
         </ul>
