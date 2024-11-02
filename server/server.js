@@ -1,7 +1,7 @@
 import 'dotenv/config'; // Automatically loads variables from .env file
 import express, { json } from "express";
 import mongoose from "mongoose"; // Import mongoose properly with ES6
-import cors from "cors";
+import cors from "cors"; 
 import authRoutes from "./routes/auth.js";
 
 const app = express();
